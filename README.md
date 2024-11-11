@@ -17,6 +17,7 @@ El sistema hace uso de un grafo para la visualizacion de los vuelos. Se consider
 
 El objetivo es encontrar un vuelo entre las ciudades de Bogota y Barranquilla (BOG y BAQ) Se crean vuelos según el caso con su duración en minutos
 
+NO SE DEBEN EJECUTAR LOS TEST EN EL PROYECTO SOLO COMENTAR Y DESCOMENTAR LOS VUELOS QUE SE QUIEREN VERIFICAR, EJECUTAR Y VERIFICAR LA SALIDA.
 
 
 
