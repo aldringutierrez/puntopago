@@ -51,27 +51,27 @@ def cargar_vuelos():
         # grapho.add_edge('Bucaramanga', 'Barranquilla', 25)
         # grapho.add_edge('Bogota', 'Barranquilla', 70)
         #--------------- vuelo 1 escala
-        grapho.add_edge('Bogota', 'Medellin', 30)
-        grapho.add_edge('Bogota', 'Bucaramanga', 35)
-        grapho.add_edge('Bogota', 'Cartagena', 70)
-        grapho.add_edge('Cali', 'Barranquilla', 80)
-        #grapho.add_edge('Cali', 'Cartagena', 85)
-        #grapho.add_edge('Medellin', 'Cali', 25)
-        grapho.add_edge('Medellin', 'Barranquilla', 50)
-        grapho.add_edge('Bucaramanga', 'Barranquilla', 25)
-        #--------------- vuelo 2 escalas
         # grapho.add_edge('Bogota', 'Medellin', 30)
         # grapho.add_edge('Bogota', 'Bucaramanga', 35)
         # grapho.add_edge('Bogota', 'Cartagena', 70)
         # grapho.add_edge('Cali', 'Barranquilla', 80)
         # grapho.add_edge('Cali', 'Cartagena', 85)
         # grapho.add_edge('Medellin', 'Cali', 25)
+        # grapho.add_edge('Medellin', 'Barranquilla', 50)
+        # grapho.add_edge('Bucaramanga', 'Barranquilla', 25)
+        #--------------- vuelo 2 escalas
+        grapho.add_edge('Bogota', 'Medellin', 30)
+        grapho.add_edge('Bogota', 'Bucaramanga', 35)
+        grapho.add_edge('Bogota', 'Cartagena', 70)
+        grapho.add_edge('Cali', 'Barranquilla', 80)
+        grapho.add_edge('Cali', 'Cartagena', 85)
+        grapho.add_edge('Medellin', 'Cali', 25)
 
-        #plotea el grapho
-        g_algo = GraphAlgo(grapho)
-        print(g_algo.centerPoint())
-        print(g_algo.TSP([1, 2, 4]))
-        g_algo.plot_graph()
+        #plotea el grapho (falla con muchos puntos)
+        #g_algo = GraphAlgo(grapho)
+        #print(g_algo.centerPoint())
+        #print(g_algo.TSP([1, 2, 4]))
+        #g_algo.plot_graph()
 
         for fin, dicts in grapho._inedges.items():
             for ini, weight in dicts.items():
