@@ -18,34 +18,6 @@ El sistema hace uso de un grafo para la visualizacion de los vuelos. Se consider
 El objetivo es encontrar un vuelo entre las ciudades de Bogota y Barranquilla (BOG y BAQ) Se crean vuelos según el caso con su duración en minutos
 
 
-1- vuelos directos
-
-2- vuelos con 1 escalas
-
-
-
-
-3- vuelos con dos escalas
-Para este caso se crean los vuelos
-grapho.add_edge('Bogota', 'Medellin', 30)
-grapho.add_edge('Bogota', 'Bucaramanga', 35)
-grapho.add_edge('Bogota', 'Cartagena', 70)
-grapho.add_edge('Cali', 'Barranquilla', 80)
-grapho.add_edge('Cali', 'Cartagena', 85)
-grapho.add_edge('Medellin', 'Cali', 25)
-
-
-
-
-
-La salida del sistema es :
-
-
-
-4- vuelos con mas de dos escalas
-
-
-
 
 
 
